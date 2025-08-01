@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💕 Página Web de Aniversario: "Nuestro Viaje de 21 Meses" 💕
 
 Una página web romántica y elegante para celebrar 1 año y 9 meses de amor. Diseñada como una carta de amor digital con efectos especiales y una experiencia emotiva.
@@ -121,3 +122,6 @@ Esta página fue creada con mucho amor y cariño para celebrar momentos especial
 ---
 
 *Creado con 💕 para celebrar el amor*
+=======
+# 21-meses-de-amor
+>>>>>>> 68ff947924458b6aec89145d594e5501cd6d738d
