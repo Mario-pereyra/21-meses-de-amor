@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felices 21 Meses, Mi Amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preload crítico para las 2 fotos más importantes -->
+    <link rel="preload" as="image" href="img/besito1.jpg">
+    <link rel="preload" as="image" href="img/fotito1.jpg">
+</head>
+<body>
+    <!-- Preloader Romántico -->
+    <div id="romantic-preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="loading-hearts">
+                <div class="heart heart-1">💕</div>
+                <div class="heart heart-2">💖</div>
+                <div class="heart heart-3">💗</div>
+            </div>
+            <h2 class="loading-title">Cargando nuestros recuerdos...</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">0%</div>
+            </div>
+            <p class="loading-subtitle">Preparando momentos especiales para ti 💕</p>
+        </div>
+    </div>
+
+    <!-- Fondo de partículas románticas -->
+    <div class="background-hearts"></div>
+    
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Encabezado -->
+        <header class="header">
+            <h1 class="main-title fade-in">Felices 21 Meses, Mi Amor</h1>
+            <p class="subtitle fade-in-delay">Un pequeño rincón para celebrar nuestro viaje.</p>
+        </header>
+
+        <!-- Galería de Recuerdos -->
+        <section class="gallery-section">
+            <h2 class="section-title">Nuestros Recuerdos</h2>
+            <div class="photo-gallery">
+                <!-- Foto 1: Carga diferida -->
+                <div class="photo-container photo-1" data-description="Nuestro primer encuentro especial">
+                    <div class="image-skeleton"></div>
+                    <img data-src="img/1raIdaAlcineconMasita.jpg" alt="Nuestro primer encuentro especial" class="gallery-img lazy-image">
+                    <div class="photo-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span>Nuestro primer encuentro especial</span>
+                    </div>
+                </div>
+                <!-- Foto 2: Destacada - Carga prioritaria -->
+                <div class="photo-container photo-2 highlighted priority-load" data-description="Momentos de amor">
+                    <img src="img/besito1.jpg" alt="Momentos de amor" class="gallery-img priority-image loaded">
+                    <div class="photo-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>Momentos de amor ⭐</span>
+                    </div>
+                    <div class="highlight-badge">💕 Especial</div>
+                </div>
+                <!-- Foto 3: Carga diferida -->
+                <div class="photo-container photo-3" data-description="Celebraciones especiales">
+                    <div class="image-skeleton"></div>
+                    <img data-src="img/cumplemasita1.jpg" alt="Celebraciones especiales" class="gallery-img lazy-image">
+                    <div class="photo-overlay">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>Celebraciones especiales</span>
+                    </div>
+                </div>
+                <!-- Foto 4: Destacada - Carga prioritaria -->
+                <div class="photo-container photo-4 highlighted priority-load" data-description="Nuestro día a día">
+                    <img src="img/fotito1.jpg" alt="Nuestro día a día" class="gallery-img priority-image loaded">
+                    <div class="photo-overlay">
+                        <i class="fas fa-star"></i>
+                        <span>Nuestro día a día ⭐</span>
+                    </div>
+                    <div class="highlight-badge">💫 Especial</div>
+                </div>
+                <!-- Foto 5: Carga diferida -->
+                <div class="photo-container photo-5" data-description="Momentos divertidos">
+                    <div class="image-skeleton"></div>
+                    <img data-src="img/fotodeellaagarrandomeloscachetitus.jpg" alt="Momentos divertidos" class="gallery-img lazy-image">
+                    <div class="photo-overlay">
+                        <i class="fas fa-laugh"></i>
+                        <span>Momentos divertidos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería Expandida por Categorías -->
+        <section class="expanded-gallery-section lazy-section" data-lazy-section="true">
+            <h2 class="section-title">Nuestra Historia Completa</h2>
+            
+            <!-- Primera Foto -->
+            <div class="category-section">
+                <h3 class="category-title">
+                    <i class="fas fa-camera"></i>
+                    El Comienzo de Todo
+                </h3>
+                <div class="category-grid single-photo">
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/primerfoto.jpg" alt="Nuestra primera foto juntos" class="category-img lazy-image">
+                        <div class="photo-caption">Nuestra primera foto juntos 💕</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nuestros Besos -->
+            <div class="category-section">
+                <h3 class="category-title">
+                    <i class="fas fa-kiss"></i>
+                    Nuestros Besos
+                </h3>
+                <div class="category-grid">
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/besito1.jpg" alt="Besito 1" class="category-img lazy-image">
+                        <div class="photo-caption">Primer beso 💋</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/besito2.jpg" alt="Besito 2" class="category-img lazy-image">
+                        <div class="photo-caption">Momentos dulces 😘</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/besito3.jpg" alt="Besito 3" class="category-img lazy-image">
+                        <div class="photo-caption">Amor puro 💖</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/besito4.jpg" alt="Besito 4" class="category-img lazy-image">
+                        <div class="photo-caption">Ternura infinita 🥰</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/besito5.jpg" alt="Besito 5" class="category-img lazy-image">
+                        <div class="photo-caption">Mi felicidad 😍</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Celebraciones -->
+            <div class="category-section">
+                <h3 class="category-title">
+                    <i class="fas fa-birthday-cake"></i>
+                    Celebraciones Especiales
+                </h3>
+                <div class="category-grid">
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/cumplemasita1.jpg" alt="Cumpleaños 1" class="category-img lazy-image">
+                        <div class="photo-caption">Celebrando juntos 🎂</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/cumplemasita2.jpg" alt="Cumpleaños 2" class="category-img lazy-image">
+                        <div class="photo-caption">Momentos especiales 🎉</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/cumplemasita3.jpg" alt="Cumpleaños 3" class="category-img lazy-image">
+                        <div class="photo-caption">Días importantes 🎈</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nuestro Día a Día -->
+            <div class="category-section">
+                <h3 class="category-title">
+                    <i class="fas fa-heart"></i>
+                    Nuestro Día a Día (Selección Especial)
+                </h3>
+                <div class="category-grid fotitos-grid">
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotito1.jpg" alt="Fotito 1" class="category-img lazy-image">
+                        <div class="photo-caption">Momentos cotidianos ⭐</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotito5.jpg" alt="Fotito 5" class="category-img lazy-image">
+                        <div class="photo-caption">Risas compartidas 😊</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotito10.jpg" alt="Fotito 10" class="category-img lazy-image">
+                        <div class="photo-caption">Complicidad 💫</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotito15.jpg" alt="Fotito 15" class="category-img lazy-image">
+                        <div class="photo-caption">Juntos siempre 🤗</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotito21.jpg" alt="Fotito 21" class="category-img lazy-image">
+                        <div class="photo-caption">21 meses de amor 💕</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotomasreciente.jpg" alt="Foto más reciente" class="category-img lazy-image">
+                        <div class="photo-caption">Nuestro presente 💖</div>
+                    </div>
+                </div>
+                <div class="view-all-btn">
+                    <button class="btn-view-all" onclick="showAllFotitos()">
+                        <i class="fas fa-images"></i>
+                        Ver todas nuestras fotos cotidianas (21 fotos)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Momentos Divertidos -->
+            <div class="category-section">
+                <h3 class="category-title">
+                    <i class="fas fa-laugh"></i>
+                    Momentos Divertidos y Especiales
+                </h3>
+                <div class="category-grid">
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotodeellaagarrandomeloscachetitus.jpg" alt="Momentos divertidos" class="category-img lazy-image">
+                        <div class="photo-caption">Mi bb traviesa 😄</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotoconfiltrodesupermariobros.jpg" alt="Super Mario Bros" class="category-img lazy-image">
+                        <div class="photo-caption">Siendo gamers 🎮</div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="image-skeleton category-skeleton"></div>
+                        <img data-src="img/fotoyoagarrandolecachetitos.jpg" alt="Yo agarrando cachetitos" class="category-img lazy-image">
+                        <div class="photo-caption">Mimando a mi masita 🥰</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- La Carta -->
+        <section class="letter-section">
+            <h2 class="letter-title">Para la bb de la relación,</h2>
+            <div class="letter-content">
+                <p>Hoy es un día especial, un año y nueve meses. Son 21 meses de tenerte en mi vida, 21 meses de un viaje con altibajos que ha tenido de todo, y que valoro más de lo que puedo expresar (tí me cuesta y sé que te das cuenta jsjsjs pero hago el esfuerzo pa demostrarlo jsjsjsjs).</p>
+
+                <p>Si veo hacia atrás, veo un camino lleno de risas, de complicidad y de momentos que marcan la vida de uno. Pero seamos honestos, mi amor, no todo ha sido un cuento de hadas. Hemos enfrentado nuestros propios problemas, hemos tenido discusiones que han sido fuertes y desacuerdos que han puesto a prueba nuestra paciencia (musho 😑) y nuestro orgullo de ambos.</p>
+
+                <p class="highlight">Y sin embargo, aquí estamos.</p>
+
+                <p>Eso es lo que quiero celebrar hoy. Que a pesar de los problemas, de las diferencias y de los días grises, seguimos aquí, juntos. Celebro y agradezco nuestra fortaleza, y agradezco, por encima de todo, nuestra increíble capacidad de mirarnos a los ojos después de los problemitas, respirar profundo y elegirnos una vez más. Cada uno de esos momentos difíciles no ha sido una grieta en nuestra relación, sino el cemento que la ha hecho más fuerte.</p>
+
+                <p>Porque en medio de todo, siempre estás tú. Mi Cuchurrumi, mi BB, mi masíta, mi Chikistrikis que le da dulzura e ilumina mis días y, sí, también mi bb testaruda con la que puedo debatir hasta encontrar un punto medio. Eres esa combinación perfecta que me mantiene equilibrado y me impulsa a ser mejor.</p>
+
+                <p>No somos perfectos, nadie es perfecto, por eso hemos estado haciendo lo mejor que podemos, aprendiendo el uno del otro y esforzándonos cada día para seguir progresando, para seguir construyendo este amor que es nuestro, esta relación, y me siento increíblemente afortunado de tenerte como mi compañera.</p>
+
+                <p>Gracias por tu paciencia, gracias por tu amor y, sobre todo, gracias por no rendirte y tenerme paciencia 🫣. Gracias por estos 21 meses y por todos los que vendrán.</p>
+
+                <p class="love-declaration">Te amo más de lo que las palabras pueden decir.</p>
+
+                <p class="signature">Con todo mi amor pa mi bb 😍<br>
+                Musho musho mushisimuuu 🥰🤗😍</p>
+            </div>
+        </section>
+
+        <!-- Pie de Página -->
+        <footer class="footer">
+            <p class="footer-quote">Siempre tuyo, siempre mía, siempre nuestros.</p>
+            <p class="anniversary-date" id="anniversaryDate"></p>
+        </footer>
+    </div>
+
+    <!-- Botón de música romántica -->
+    <button class="music-toggle" id="musicToggle">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

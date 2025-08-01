@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Previa - Página de Aniversario</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8f4f0 0%, #f2d7d5 100%);
+            margin: 0;
+            padding: 40px;
+            min-height: 100vh;
+        }
+        .preview-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        .title {
+            color: #722f37;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .feature-card {
+            background: #f8f4f0;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #722f37;
+        }
+        .feature-title {
+            font-weight: 600;
+            color: #722f37;
+            margin-bottom: 10px;
+        }
+        .feature-desc {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        .action-buttons {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #722f37, #f2d7d5);
+            color: white;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(114, 47, 55, 0.3);
+        }
+        .tech-stack {
+            background: #f8f4f0;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        .tech-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .tech-item {
+            background: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #722f37;
+            border: 1px solid #f2d7d5;
+        }
+        .emoji {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <h1 class="title">💕 Página de Aniversario Creada 💕</h1>
+        
+        <p style="text-align: center; font-size: 1.2rem; color: #555; margin-bottom: 30px;">
+            ¡Tu página web romántica está lista! Una experiencia completamente personalizada para celebrar vuestro amor.
+        </p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-title"><span class="emoji">🎨</span> Diseño Elegante</div>
+                <div class="feature-desc">Colores románticos, tipografías elegantes y un diseño minimalista que transmite amor y calidez.</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-title"><span class="emoji">✨</span> Efectos Especiales</div>
+                <div class="feature-desc">Corazones flotantes, animaciones suaves, partículas mágicas y efectos de escritura typewriter.</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-title"><span class="emoji">📱</span> Totalmente Responsivo</div>
+                <div class="feature-desc">Se ve perfecta en móviles, tablets y computadoras. Optimizada para cualquier dispositivo.</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-title"><span class="emoji">🖼️</span> Galería Interactiva</div>
+                <div class="feature-desc">5 espacios para vuestras fotos favoritas con efectos hover y mensajes personalizados.</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-title"><span class="emoji">🎵</span> Ambiente Musical</div>
+                <div class="feature-desc">Botón de música integrado para crear el ambiente perfecto (puedes añadir tu canción favorita).</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-title"><span class="emoji">💌</span> Carta de Amor</div>
+                <div class="feature-desc">Tu hermoso mensaje de 21 meses presentado con tipografía elegante y efectos especiales.</div>
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="openMainPage()">
+                <span class="emoji">💕</span> Ver Página de Aniversario
+            </button>
+        </div>
+        
+        <div class="tech-stack">
+            <h3 style="text-align: center; color: #722f37; margin-bottom: 20px;">Tecnologías Utilizadas</h3>
+            <div class="tech-items">
+                <span class="tech-item">HTML5</span>
+                <span class="tech-item">CSS3</span>
+                <span class="tech-item">JavaScript ES6+</span>
+                <span class="tech-item">Google Fonts</span>
+                <span class="tech-item">Font Awesome</span>
+                <span class="tech-item">Animaciones CSS</span>
+                <span class="tech-item">Responsive Design</span>
+            </div>
+        </div>
+        
+        <div style="background: #f2d7d5; padding: 20px; border-radius: 15px; margin: 30px 0; text-align: center;">
+            <h4 style="color: #722f37; margin-bottom: 15px;">🎯 Próximos Pasos</h4>
+            <ul style="list-style: none; padding: 0; color: #555;">
+                <li style="margin: 8px 0;">📸 Añade vuestras fotos favoritas en la galería</li>
+                <li style="margin: 8px 0;">🎵 Incluye vuestra canción especial</li>
+                <li style="margin: 8px 0;">✍️ Personaliza cualquier texto que desees</li>
+                <li style="margin: 8px 0;">🎨 Ajusta colores si quieres un toque único</li>
+                <li style="margin: 8px 0;">💕 ¡Comparte este hermoso regalo!</li>
+            </ul>
+        </div>
+        
+        <p style="text-align: center; font-style: italic; color: #722f37; margin-top: 30px;">
+            "Creado con 💖 para celebrar vuestro hermoso viaje de amor"
+        </p>
+    </div>
+    
+    <script>
+        function openMainPage() {
+            // En un entorno real, esto abriría index.html
+            alert('💕 ¡La página principal se abrirá en una nueva ventana! Busca el archivo index.html en tu carpeta del proyecto.');
+            // window.open('index.html', '_blank');
+        }
+        
+        // Efecto de entrada suave
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.preview-container');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                container.style.transition = 'all 1s ease';
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
